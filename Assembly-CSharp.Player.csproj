@@ -60,6 +60,7 @@
     <Compile Include="Assets\Script\ButtonController.cs" />
     <Compile Include="Assets\Script\BeatScroller.cs" />
     <Compile Include="Assets\Script\NoteObject.cs" />
+    <Compile Include="Assets\Script\EffectObject.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
