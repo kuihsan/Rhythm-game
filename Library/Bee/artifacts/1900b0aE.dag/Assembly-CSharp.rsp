@@ -346,11 +346,11 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
-"Assets/Script/BeatScroller.cs"
-"Assets/Script/ButtonController.cs"
-"Assets/Script/EffectObject.cs"
-"Assets/Script/GameManager.cs"
-"Assets/Script/NoteObject.cs"
+"Assets/Rhythm Game Tutorial/Script/BeatScroller.cs"
+"Assets/Rhythm Game Tutorial/Script/ButtonController.cs"
+"Assets/Rhythm Game Tutorial/Script/EffectObject.cs"
+"Assets/Rhythm Game Tutorial/Script/GameManager.cs"
+"Assets/Rhythm Game Tutorial/Script/NoteObject.cs"
 -langversion:9.0
 
 /deterministic
