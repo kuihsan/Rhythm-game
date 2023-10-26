@@ -63,6 +63,7 @@
     <Compile Include="Assets\Rhythm Game Tutorial\Script\GameManager.cs" />
     <Compile Include="Assets\Rhythm Game Tutorial\Script\EffectObject.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\_Assets\Player.cs" />
     <Compile Include="Assets\Rhythm Game Tutorial\Script\NoteObject.cs" />
     <Compile Include="Assets\Rhythm Game Tutorial\Script\ButtonController.cs" />
   </ItemGroup>
