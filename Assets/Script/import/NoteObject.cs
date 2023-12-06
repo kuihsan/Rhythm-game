@@ -23,8 +23,6 @@ public class NoteObject : MonoBehaviour
                 gameObject.SetActive(false);
             }
         }
-
-
     }
     //private void Update()
     //{
