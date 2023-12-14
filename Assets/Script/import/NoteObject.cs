@@ -14,6 +14,7 @@ public class NoteObject : MonoBehaviour
 
     // Update is called once per frame
 
+
     private void Update()
     {
         if (Input.GetKeyDown(keyToPress))
@@ -21,40 +22,30 @@ public class NoteObject : MonoBehaviour
             if (canBePressed)
             {
                 gameObject.SetActive(false);
+                obtained = true;
+                // GameManager.instance.NoteHit();
+
+                if (Mathf.Abs(transform.position.z) > -28.55 || (transform.position.z) < -29.88)
+                {
+                    Debug.Log("Hit");
+                    GameManager.instance.NormalHit();
+                    Instantiate(hitEffect, transform.position, hitEffect.transform.rotation);
+                }
+                else if (Mathf.Abs(transform.position.y) > -28.75 || (transform.position.y) <-29.91)
+                {
+                    Debug.Log("Good");
+                    GameManager.instance.GoodHit();
+                    Instantiate(goodEffect, transform.position, goodEffect.transform.rotation);
+                }
+                else
+                {
+                    Debug.Log("Perfect");
+                    GameManager.instance.PerfectHit();
+                    Instantiate(perfectEffect, transform.position, perfectEffect.transform.rotation);
+                }
             }
         }
     }
-    //private void Update()
-    //{
-    //    if (Input.GetKeyDown(keyToPress))
-    //    {
-    //        if (canBePressed)
-    //        {
-    //            gameObject.SetActive(false);
-    //            obtained = true;
-    //            // GameManager.instance.NoteHit();
-
-    //            if (Mathf.Abs(transform.position.y) > 1.50 || (transform.position.y) < 0.25)
-    //            {
-    //                Debug.Log("Hit");
-    //                GameManager.instance.NormalHit();
-    //                Instantiate(hitEffect, transform.position, hitEffect.transform.rotation);
-    //            }
-    //            else if (Mathf.Abs(transform.position.y) > 1.10 || (transform.position.y) < 0.7)
-    //            {
-    //                Debug.Log("Good");
-    //                GameManager.instance.GoodHit();
-    //                Instantiate(goodEffect, transform.position, goodEffect.transform.rotation);
-    //            }
-    //            else
-    //            {
-    //                Debug.Log("Perfect");
-    //                GameManager.instance.PerfectHit();
-    //                Instantiate(perfectEffect, transform.position, perfectEffect.transform.rotation);
-    //            }
-    //        }
-    //    }
-    //}
 
     private void OnTriggerEnter(Collider other)
     {
