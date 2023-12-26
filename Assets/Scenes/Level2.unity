@@ -8719,8 +8719,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7904a5d1fbf6be4491a70b2f67edbce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultImage: {fileID: 8691780276856062721, guid: d0d9df22fdb28714ba43d8432922b6b8, type: 3}
-  pressedImage: {fileID: 8691780276856062721, guid: d0d9df22fdb28714ba43d8432922b6b8, type: 3}
+  defaultMesh: {fileID: -7387706064836869012, guid: ae4e50d8aafabf04f9941e085c586068, type: 3}
+  pressedMesh: {fileID: -7387706064836869012, guid: 6cca2c2207573fb4481253bb3f06f5ac, type: 3}
+  defaultMaterials:
+  - {fileID: -6087771358165109452, guid: 6b724a60a14f71d41a074f12ecf418e4, type: 3}
+  pressedMaterials:
+  - {fileID: -2813467912831258332, guid: 6b724a60a14f71d41a074f12ecf418e4, type: 3}
+  - {fileID: -6087771358165109452, guid: 6b724a60a14f71d41a074f12ecf418e4, type: 3}
   keyToPress: 115
 --- !u!1001 &549060385
 PrefabInstance:
@@ -21951,8 +21956,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7904a5d1fbf6be4491a70b2f67edbce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultImage: {fileID: -7387706064836869012, guid: ae4e50d8aafabf04f9941e085c586068, type: 3}
-  pressedImage: {fileID: -7387706064836869012, guid: ae4e50d8aafabf04f9941e085c586068, type: 3}
+  defaultMesh: {fileID: -7387706064836869012, guid: ae4e50d8aafabf04f9941e085c586068, type: 3}
+  pressedMesh: {fileID: -7387706064836869012, guid: 6cca2c2207573fb4481253bb3f06f5ac, type: 3}
+  defaultMaterials:
+  - {fileID: -3846018093981099296, guid: ae4e50d8aafabf04f9941e085c586068, type: 3}
+  pressedMaterials:
+  - {fileID: -6922793697723135513, guid: 6cca2c2207573fb4481253bb3f06f5ac, type: 3}
+  - {fileID: -3846018093981099296, guid: 6cca2c2207573fb4481253bb3f06f5ac, type: 3}
   keyToPress: 97
 --- !u!54 &1342920319
 Rigidbody:
@@ -27918,8 +27928,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7904a5d1fbf6be4491a70b2f67edbce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultImage: {fileID: 2534964839176971238, guid: 2c2e397cefd488942b797d92204de6f9, type: 3}
-  pressedImage: {fileID: 2534964839176971238, guid: 2c2e397cefd488942b797d92204de6f9, type: 3}
+  defaultMesh: {fileID: -7387706064836869012, guid: ae4e50d8aafabf04f9941e085c586068, type: 3}
+  pressedMesh: {fileID: -7387706064836869012, guid: 6cca2c2207573fb4481253bb3f06f5ac, type: 3}
+  defaultMaterials:
+  - {fileID: 9185737683893222716, guid: 01bc56f48335afc4881be25ac44f47fb, type: 3}
+  pressedMaterials:
+  - {fileID: -3522955778539423533, guid: 01bc56f48335afc4881be25ac44f47fb, type: 3}
+  - {fileID: 9185737683893222716, guid: 01bc56f48335afc4881be25ac44f47fb, type: 3}
   keyToPress: 100
 --- !u!1 &1666258261
 GameObject:

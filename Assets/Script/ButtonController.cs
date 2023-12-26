@@ -3,8 +3,13 @@ using UnityEngine;
 public class ButtonController : MonoBehaviour
 {
     private MeshFilter theSR;
-    public Mesh defaultImage;
-    public Mesh pressedImage;
+    private MeshRenderer meshRenderer;
+
+    public Mesh defaultMesh;
+    public Mesh pressedMesh;
+
+    public Material[] defaultMaterials; // Array of materials for the default state
+    public Material[] pressedMaterials; // Array of materials for the pressed state
 
     public KeyCode keyToPress;
 
@@ -12,6 +17,8 @@ public class ButtonController : MonoBehaviour
     private void Start()
     {
         theSR = GetComponent<MeshFilter>();
+        meshRenderer = GetComponent<MeshRenderer>();
+        meshRenderer.materials = defaultMaterials; // Set the default materials initially
     }
 
     // Update is called once per frame
@@ -19,11 +26,13 @@ public class ButtonController : MonoBehaviour
     {
         if (Input.GetKeyDown(keyToPress))
         {
-            theSR.mesh = pressedImage;
+            theSR.mesh = pressedMesh;
+            meshRenderer.materials = pressedMaterials; // Change materials when pressed
         }
         if (Input.GetKeyUp(keyToPress))
         {
-            theSR.mesh = defaultImage;
+            theSR.mesh = defaultMesh;
+            meshRenderer.materials = defaultMaterials; // Change materials back to default when released
         }
     }
 }
