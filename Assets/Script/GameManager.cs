@@ -31,6 +31,9 @@ public class GameManager : MonoBehaviour
 
     public GameObject resultsScreen;
     public GameObject currentscoreindicator;
+    public GameObject Continue;
+    public GameObject Retry;
+
     public Text percentHitText, normalsText, goodsText, perfectText, missesText, rankText, finalScoreText;
 
 
@@ -62,7 +65,7 @@ public class GameManager : MonoBehaviour
             if(!theMusic.isPlaying && !resultsScreen.activeInHierarchy)
             {
                 resultsScreen.SetActive(true);
-                currentscoreindicator.SetActive(false);
+                currentscoreindicator.SetActive(false);               
                 normalsText.text = "" + normalHits;
                 goodsText.text = goodHits.ToString();
                 perfectText.text = perfectHits.ToString();
@@ -74,22 +77,32 @@ public class GameManager : MonoBehaviour
                 percentHitText.text = percentHit.ToString("F1")+"%";
 
                 string rankVal = "F";
+                Retry.SetActive(true);
 
                 if (percentHit > 40)
                 {
                     rankVal = "D";
-                    if(percentHit > 55)
+                    Retry.SetActive(true);
+                    if (percentHit > 55)
                     {
                         rankVal = "C";
-                        if(percentHit >70)
+                        Retry.SetActive(true);
+                        if (percentHit >70)
                         {
                             rankVal = "B";
-                            if(percentHit > 85)
+                            Continue.SetActive(true);
+                            Retry.SetActive(true);
+                            if (percentHit > 85)
                             {
                                 rankVal = "A";
-                                if(percentHit >95)
+                                Continue.SetActive(true);
+                                Retry.SetActive(true);
+                                if (percentHit >95)
                                 {
                                     rankVal = "S";
+                                    Continue.SetActive(true);
+                                    Retry.SetActive(true);
+
                                 }
                             }
                         }
