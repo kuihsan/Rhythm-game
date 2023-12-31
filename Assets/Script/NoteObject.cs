@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class NoteObject : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class NoteObject : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
+
     }
 
     // Update is called once per frame
@@ -29,19 +31,19 @@ public class NoteObject : MonoBehaviour
                 {
                     Debug.Log("Hit");
                     GameManager.instance.NormalHit();
-                    Instantiate(hitEffect,transform.position, hitEffect.transform.rotation);
+                    Instantiate(hitEffect, new Vector3(transform.position.x, transform.position.y+1, transform.position.z), hitEffect.transform.rotation);
                 }
                 else if (Mathf.Abs(transform.position.z) > 0.25f)
                 {
                     Debug.Log("Good");
                     GameManager.instance.GoodHit();
-                    Instantiate(goodEffect, transform.position, goodEffect.transform.rotation);
+                    Instantiate(goodEffect, new Vector3(transform.position.x, transform.position.y + 1, transform.position.z), goodEffect.transform.rotation);
                 }
                 else
                 {
                     Debug.Log("Perfect");
                     GameManager.instance.PerfectHit();
-                    Instantiate(perfectEffect, transform.position, perfectEffect.transform.rotation);
+                    Instantiate(perfectEffect, new Vector3(transform.position.x, transform.position.y + 1, transform.position.z), perfectEffect.transform.rotation);
                 }
             }
         }
@@ -65,7 +67,7 @@ public class NoteObject : MonoBehaviour
                 if (!obtained)
                 {
                     GameManager.instance.NoteMissed();
-                    Instantiate(missEffect, transform.position, missEffect.transform.rotation);
+                    Instantiate(missEffect, new Vector3(transform.position.x, transform.position.y+1, transform.position.z), missEffect.transform.rotation);
                 }
             }
             //GameManager.instance.NoteMissed();
