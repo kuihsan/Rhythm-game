@@ -22,6 +22,22 @@ public class Menu : MonoBehaviour
     {
         SceneManager.LoadScene("Level3");
     }
+
+    public void LevelSelection()
+    {
+        SceneManager.LoadScene("LevelSelection");
+    }
+
+    public void LevelSelection2()
+    {
+        SceneManager.LoadScene("LevelSelection2");
+    }
+
+    public void LevelSelection3()
+    {
+        SceneManager.LoadScene("LevelSelection3");
+    }
+
     public void QuitGame()
     {
         Debug.Log("Quit");
