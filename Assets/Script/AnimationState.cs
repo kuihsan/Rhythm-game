@@ -17,7 +17,7 @@ public class AnimationState : MonoBehaviour
     void Update()
     {
         bool IsWalking = animator.GetBool("IsWalking");
-        bool forwardPressed = Input.GetKey("w") || Input.GetKey("up");
+        bool forwardPressed = Input.GetKey("w") || Input.GetKey("s");
 
         if (!IsWalking && forwardPressed)
         {
