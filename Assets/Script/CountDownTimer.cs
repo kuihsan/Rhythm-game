@@ -7,6 +7,7 @@ public class CountDownTimer : MonoBehaviour
     public float timeLeft = 300f; // Set the initial time to 1000 seconds
     public Text timeText;
     private bool isPaused = false;
+    public GameObject LoseGUI;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +30,7 @@ public class CountDownTimer : MonoBehaviour
             else
             {
                 timeLeft = 0f;
+                LoseGUI.SetActive(true);
                 // Optionally, you can perform some action when the timer reaches 0.
                 // For example, trigger the end of the game, show a message, etc.
                 // You can add your logic here.
