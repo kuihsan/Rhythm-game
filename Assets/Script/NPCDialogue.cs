@@ -5,6 +5,7 @@ using TMPro;
 
 public class NPCDialogue : MonoBehaviour
 {
+    public AudioSource talk;
     public TextMeshProUGUI textComponent;
     public string[] lines;
     public float textSpeed;
@@ -41,6 +42,7 @@ public class NPCDialogue : MonoBehaviour
     {
         index = 0;
         StartCoroutine(TypeLine());
+        talk.Play();
     }
 
     IEnumerator TypeLine()
