@@ -63,7 +63,10 @@ public class Menu : MonoBehaviour
     {
         StartCoroutine(LoadLevel(12));
     }
-
+    public void Credit()
+    {
+        StartCoroutine(LoadLevel(13));
+    }
 
     IEnumerator LoadLevel(int levelIndex)
     {

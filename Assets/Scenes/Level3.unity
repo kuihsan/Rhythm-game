@@ -20786,7 +20786,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 198262396}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-        m_MethodName: Menus
+        m_MethodName: Credit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
